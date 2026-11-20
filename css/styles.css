@@ -1,27 +1,32 @@
-< !-- Author: Course: Lesson: -->body {
-    bg-color: #eee;
-    font-family: Ariel, sans-serif;
-    font-size: 9px;
-    color: #7af0ff;
+/* Author: Eli2328016 | Course: CIS133DA | Section: #27487 | Lesson: 12 */
+
+/* Corrected bg-color to background-color and Ariel to Arial. */
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
 }
 
-header width: 80%;
-padding: 20px 0px;
-margin: 0 auto;
-text-align: center;
+/* Added missing opening curly brace to header selector. */
+header {
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 main {
     width: 80%;
-    padding: 30px 0px;
+    padding: 30px 0;
     margin: 0 auto;
 }
 
 nav a {
     margin: 10px;
-    padding: 2px;
+    padding: 8px;
     background-color: #FFFF00;
-    color: #9D85FF;
+    color: #333333;
     text-decoration: none;
 }
 
@@ -35,29 +40,38 @@ img {
     display: block;
     margin: auto;
     width: 300px;
+    max-width: 100%;
 }
 
+/* Removed invalid ampersand from width declaration. */
 table {
-    & width: 100%;
+    width: 100%;
+    border-collapse: collapse;
 }
 
+/* Corrected missing semicolon and table styling. */
 table,
 th,
 td {
-    border: 1px solid #FFF;
-    background-color: #FFFF00 border-collapse: collapse;
+    border: 1px solid #333333;
     padding: 10px;
 }
 
 th {
     background-color: #185f80;
-}
+    color: #ffffff;
 }
 
+/* Removed extra closing curly brace. */
 footer {
     width: 80%;
     margin: auto;
     text-align: center;
     background-color: #185f80;
+    color: #ffffff;
     padding: 20px;
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
 }
